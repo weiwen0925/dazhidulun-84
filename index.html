@@ -873,5 +873,58 @@ document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classL
 upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
 })();</script>
 <!--WY-C84P2:END-->
+<!--WY-C84P3:BEGIN-->
+<style id="wy-c84p3-css">
+.c84p3-fabbox{position:fixed;right:22px;bottom:78px;z-index:121;display:none;}
+.c84p3-fabbox.show{display:block;}
+.c84p3-btn{display:inline-flex;align-items:center;gap:9px;font-family:"Noto Sans TC",sans-serif;letter-spacing:.5px;color:#f7ecd2;background:linear-gradient(135deg,#573f38,#2e2420);padding:8px 15px;border-radius:22px;border:1px solid rgba(184,134,11,.6);box-shadow:0 4px 16px rgba(0,0,0,.3);cursor:pointer;opacity:.96;transition:opacity .3s,transform .2s,box-shadow .2s;}
+.c84p3-btn:hover{opacity:1;transform:translateY(-2px);box-shadow:0 6px 22px rgba(184,134,11,.5);}
+.c84p3-ic{font-size:15px;line-height:1;color:#ecc978;}
+.c84p3-ls{display:flex;flex-direction:column;align-items:flex-start;line-height:1.22;}
+.c84p3-l1{font-size:10.5px;font-weight:500;opacity:.82;white-space:nowrap;}
+.c84p3-l2{font-size:13px;font-weight:700;color:#faf1d8;white-space:nowrap;}
+.c84p3-modal{position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;background:rgba(28,20,12,.58);padding:16px;}
+.c84p3-modal.open{display:flex;}
+.c84p3-card{position:relative;background:#fbf7ee;max-width:900px;width:100%;max-height:88vh;overflow:auto;border:1px solid #d8c8ac;border-radius:14px;padding:30px 24px 22px;box-shadow:0 18px 50px rgba(0,0,0,.4);}
+.c84p3-card h3{margin:0 0 2px;font-family:"Noto Serif TC",serif;font-size:20px;color:#8b5e3c;}
+.c84p3-card .sub{margin:0 0 14px;font-family:"Noto Sans TC",sans-serif;font-size:13px;color:#6b5b4b;}
+.c84p3-close{position:absolute;top:12px;right:16px;width:34px;height:34px;border:none;border-radius:50%;background:#efe6d4;color:#8b5e3c;font-size:22px;line-height:1;cursor:pointer;z-index:2;}
+.c84p3-close:hover{background:#e3d5b8;}
+.c84p3-tbl{width:100%;border-collapse:collapse;font-family:"Noto Sans TC",sans-serif;font-size:13px;margin:.3em 0 1.2em;}
+.c84p3-tbl caption{font-family:"Noto Serif TC",serif;font-weight:700;color:#8b5e3c;font-size:14.5px;text-align:left;margin:.6em 0 .35em;line-height:1.5;}
+.c84p3-tbl th,.c84p3-tbl td{border:1px solid #d8c8ac;padding:.45em .6em;text-align:left;vertical-align:top;line-height:1.6;}
+.c84p3-tbl thead th{background:#8b5e3c;color:#f7ecd2;font-weight:700;}
+.c84p3-tbl td:first-child{white-space:nowrap;color:#8b5e3c;font-weight:700;background:#f0e8d8;}
+.c84p3-tbl tbody tr:nth-child(even) td{background:#f6efe0;}
+.c84p3-tbl b{color:#8b2500;}
+.c84p3-note{font-size:12px;color:#5a4e3a;line-height:1.9;background:#f6efe0;border-left:3px solid #c4956a;border-radius:0 6px 6px 0;padding:10px 13px;margin:4px 0 0;}
+.c84p3-note b{color:#8b2500;}
+@media(max-width:900px){.c84p3-fabbox{right:14px;}.c84p3-tbl{font-size:11.5px;}.c84p3-card{padding:26px 14px 16px;}}
+</style>
+<div class="c84p3-fabbox" id="c84p3Box"><button class="c84p3-btn" id="c84p3Btn" type="button" aria-label="開啟全景總表"><span class="c84p3-ic">▦</span><span class="c84p3-ls"><span class="c84p3-l1">本品 · 名相無住與佛德實相</span><span class="c84p3-l2">信解門・行持門・證果門三門推演</span></span></button></div><div class="c84p3-modal" id="c84p3Modal" role="dialog" aria-modal="true" aria-label="全景總表"><div class="c84p3-card"><button class="c84p3-close" id="c84p3Close" type="button" aria-label="關閉">×</button><h3>卷八十四·第三品 名相無住與佛德實相 · 全景總表</h3><p class="sub">卷八十四・第三品｜由稱名追入實際・火宅三車喻・三智矩陣・四句陷阱・反問答・中觀引擎</p><table class="c84p3-tbl"><caption>一、全品定位與三門邏輯地圖（本品主軸線）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>全品定位</td><td>由「空稱佛名字何以福不盡」一問追入名相與實相之關係——真正主題非稱名功德本身，而是名相如何建立、又如何不壞實相</td></tr><tr><td>三門三心法</td><td>信解門（工具論·「住名相般若」，名相能度人）→行持門（知識論·「體用一如」，以假修真）→證果門（本體論·「無住生心」，實際作證與不住四句）</td></tr><tr><td>核心命題</td><td>名相是載具，非目的地；實相不可廢假名而入，亦不可執假名為實——三門即環繞此命題逐層展開</td></tr><tr><td>火宅三車喻</td><td>三界如火宅，眾生顛倒不解；佛以羊、鹿、牛三車（三乘名相假施設）誘引諸子出宅；既至露地（第一義·實相無別），三車之名即可放下</td></tr><tr><td>三種智差序</td><td>薩婆若（聲聞辟支佛·總相知內外十二入）／道種智（菩薩·具足知四種道，引導根機分接大道二乘人天）／一切種智（佛·離有離無處中道，得一切種智）</td></tr><tr><td>四句破證與反問答</td><td>住道／非道／道非道／非道非不道皆「不也」——佛不直答而反問須菩提「汝得道時住四句中得證耶」，逼顯「無所住而得漏盡」的本體真相</td></tr></tbody></table><table class="c84p3-tbl"><caption>二、信解門與行持門・名相假定與以假修真</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>槓桿福德機制</td><td>支點（曾聞佛功德的信心）＋基數（佛功德／實相福田，無量大）＋施力（濡心稱名，有限的啟動係數）＝福亦畢苦不盡，效力來自基數無限而非施力多寡</td></tr><tr><td>言說工具論</td><td>「佛雖種種分別說諸法，但以言說欲令眾生得解，心無所著」——名相是溝通的橋非實相的牆，二佛共語本不須名相，皆為眾生無及佛者而立</td></tr><tr><td>歸謬顯不著</td><td>「云何空名相中著空名相」——若可於空名相中執著，則空亦應著空、無相亦應著無相、無作亦應著無作，層層連鎖崩解，故「名相亦不住名相中」</td></tr><tr><td>中道般若</td><td>執有（諸法有定實）則無生滅無四諦，執無（但空名相無實）亦無生滅無四諦——離有離無、處於中道，方能度眾生而得一切種智</td></tr><tr><td>道種智之忍</td><td>菩薩雖出入諸道，「未教化眾生、淨佛國土而不取證；具足是事已，然後坐道場乃取證」——能證而不證，正是大乘悲智雙運的標誌</td></tr><tr><td>三智矩陣</td><td>行者（聲聞辟支佛／菩薩摩訶薩／佛）·所緣（總相／差別道／總別俱通）·體用屬性（空體／假用／中體用一如）·目的（自度盡苦／化他淨土／自覺覺他究竟）</td></tr></tbody></table><table class="c84p3-tbl"><caption>三、證果門與中觀引擎（全圖整合）</caption><thead><tr><th>環節</th><th>內容</th></tr></thead><tbody><tr><td>四句陷阱</td><td>住「道」中（有）／住「道非道」中（亦有亦無）／住「非道」中（無）／住「非道非不道」中（非有非無）——四句窮盡一切「住」的可能，佛句句「不也」</td></tr><tr><td>破第一句二過</td><td>結使兩難：有結使不應有清淨正智，若有則與佛無異；有為法虛誑：一切有為法和合假名，無有定實，故「道」本身亦無可住</td></tr><tr><td>教學法翻轉</td><td>須菩提「貴尚佛所證」而生戲論之著，佛不直答而反問「汝得道時住四句中得證耶」——唯有反問，才能切斷向外尋求，逼發問者反觀自身現量證悟</td></tr><tr><td>自證與類比</td><td>須菩提答「不也！我無所住而得漏盡」——佛即以此類比：「菩薩摩訶薩亦如是，不住四句而證實際」，此即「反問答」一類</td></tr><tr><td>中觀引擎</td><td>名相本空（信解門）→道種智以假修真（行持門）→無所住（證果門），三者非線性三段而是相互生成的循環，如莫比烏斯環，色即是空、用即是體</td></tr><tr><td>全品總持</td><td>不執（名相本空）、不廢（道種智妙用）、不住（無所住而證）——三義一貫，即是「不廢假名而入實相」，戲論止息、畢竟清淨</td></tr></tbody></table><p class="c84p3-note">本品由「空稱佛名字何以福不盡」一問追入名相與實相之辨，依信解、行持、證果三門層層遞進：信解門明「名相能度人」而「名相亦不住名相中」，以火宅三車喻示名相為出離之具、非目的地；行持門辨三智差序，揭菩薩「以假修真」——具足一切道而不取證，正是道種智之「忍」；證果門以四句盡破「住何處作證」之問，終以佛反問須菩提自證「無所住而得漏盡」，逼顯實際無處可住的本體真相。三門收攝為一道「中觀引擎」：名相本空、道種智以假修真、無所住而證，三者相互生成、循環無盡，總歸「<b>不廢假名而入實相</b>」。</p></div></div>
+<script id="wy-c84p3-js">(function(){
+var CH=document.querySelectorAll("section.chapter");
+var BTN=document.getElementById("c84p3Btn"),BOX=document.getElementById("c84p3Box"),MODAL=document.getElementById("c84p3Modal");
+if(!CH.length||!BTN||!BOX||!MODAL)return;
+var TARGET=2;
+function curIdx(){var lim=window.innerHeight*0.35,idx=-1;for(var i=0;i<CH.length;i++){if(CH[i].getBoundingClientRect().top<lim)idx=i;}return idx;}
+var FSEL="#pinVideo,.pin-video,#vidFab,.vid-fab,#videoFab,#wyVideoBtn,#wyFab,#wy-fab,#vid-floating,#floatingYt,.video-fab,.wy-vbtn,.wy-video-fab,.floating-yt",_fab,_ft=false;
+function fab(){if(_fab&&_fab.isConnected)return _fab;if(_ft)return _fab;_ft=true;_fab=document.querySelector(FSEL);return _fab;}
+function place(){
+  var base=null,eb=document.querySelector(".wy-ebox");
+  if(eb){var r=eb.getBoundingClientRect();if(r.height>4)base=Math.round(window.innerHeight-r.top)+8;}
+  if(base===null){var fEl=fab();if(fEl){var fr=fEl.getBoundingClientRect(),st=getComputedStyle(fEl);if(fr.height>0&&st.display!=="none"&&st.visibility!=="hidden")base=Math.round(window.innerHeight-fr.top)+10;}}
+  if(base===null)base=78;
+  BOX.style.bottom=base+"px";
+}
+function upd(){place();BOX.classList.toggle("show",curIdx()===TARGET);}
+var tk=false;function onS(){if(!tk){tk=true;requestAnimationFrame(function(){tk=false;upd();});}}
+window.addEventListener("scroll",onS,{passive:true});window.addEventListener("resize",onS);
+BTN.addEventListener("click",function(){MODAL.classList.add("open");});
+MODAL.addEventListener("click",function(e){if(e.target===MODAL||e.target.id==="c84p3Close")MODAL.classList.remove("open");});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")MODAL.classList.remove("open");});
+upd();var c=0,iv=setInterval(function(){upd();if(++c>40)clearInterval(iv);},250);
+})();</script>
+<!--WY-C84P3:END-->
 </body>
 </html>
